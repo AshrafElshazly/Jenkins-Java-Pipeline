@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([usernamePassword(credentialsId: 'github', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
-                        git branch: 'main', credentialsId: 'github', url: 'https://github.com/AshrafElshazly/java-ci'
+                        git branch: 'develop', credentialsId: 'github', url: 'https://github.com/AshrafElshazly/Jenkins-Java-Pipeline'
                     }
                 }
             }
